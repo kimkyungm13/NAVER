@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <!-- section -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="group-search">
+                <h1 class="logo">
+                    <a href="">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+                        </svg>
+                        <span class="blind">네이버 로고</span>
+                    </a>
+                </h1>
+                <form action="" method="get">
+                    <fieldset>
+                        <legend class="blind">검색</legend>
+                        <input type="text" class="input-text">
+                        <button class="btn-keyboard"><span class="blind">가상키보드</span></button>
+                        <button class="btn-auto"><span class="blind">자동완성</span></button>
+                        <button class="btn-submit"><span class="blind">전송</span><svg id="search-btn" viewBox="0 0 50 50"
+                                xmlns="http://www.w3.org/2000/svg" style="fill: #03c75a">
+                                <path
+                                    d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z">
+                                </path>
+                            </svg></button>
+                    </fieldset>
+                </form>
+            </div>
+            <nav class="group-navi">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-mail"></i>
+                            <span class="name">메일</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-cafe"></i>
+                            <span class="name">카페</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-blog"></i>
+                            <span class="name">블로그</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-shopping"></i>
+                            <span class="name">쇼핑</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-news"></i>
+                            <span class="name">뉴스</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-stock"></i>
+                            <span class="name">증권</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-real"></i>
+                            <span class="name">부동산</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-map"></i>
+                            <span class="name">지도</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-webtoon"></i>
+                            <span class="name">웹툰</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-czz"></i>
+
+                            <span class="name">치지직</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <i class="ico-more"></i>
+                            <span class="name blind">전체서비스 더보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util-area left">
+                <button class="btn-menu"><span class="blind">확장메뉴</span></button>
+                <a href="" class="btn-pay"><span class="blind">네이버페이</span></a>
+            </div>
+            <div class="util-area right">
+                <button class="btn-talk"><span class="blind">네이버톡</span></button>
+                <button class="btn-alert"><span class="blind">알림혜택</span></button>
+            </div>
+        </header>
+        <main class="container">
+            <div class="main-col-left">
+                <aside class="common-frame aside-ad">
+                    <a href="">
+                        <img src="./assets/images/ad1.png" alt="">
+                    </a>
+                </aside>
+                <section class="common-frame sc-news">
+                    <h2 class="blind">뉴스</h2>
+                    <div class="group-header">
+                        <ul class="tab-list">
+                            <li class="tab-item"><a href="">뉴스스탠드</a></li>
+                            <li class="tab-item dot"><a href="">언론사편집</a></li>
+                            <li class="tab-item cate"><a href="">엔터</a></li>
+                            <li class="tab-item cate"><a href="">스포츠</a></li>
+                            <li class="tab-item cate"><a href="">경제</a></li>
+                        </ul>
+                    </div>
+                    <div class="group-issue">
+                        <div class="issue-area">
+                            <button class="btn-all">전체언론사</button>
+                            <a href="#" class="media">연합뉴스</a>
+                            <a href="#" class="issue">尹대통령-한동훈 난기류 돌출…</a>
+                        </div>
+                        <div class="news-area">
+                            <a href="">뉴스스탠드</a>
+                            <a href="">뉴스홈</a>
+                        </div>
+
+                    </div>
+                    <div class="group-media">
+                        <ul class="media-list">
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-0.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-1.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-2.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-3.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-4.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-5.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-6.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-7.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-8.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-9.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-10.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-11.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-12.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-13.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-14.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-15.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-16.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-17.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-18.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-19.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-20.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-21.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-22.png" alt="" class="news">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/new-img-23.png" alt="" class="news">
+                                </a>
+                            </li>
+
+                        </ul>
+                        <i class="vt-line vt1"></i>
+                        <i class="vt-line vt2"></i>
+                        <i class="vt-line vt3"></i>
+                        <i class="vt-line vt4"></i>
+                        <i class="vt-line vt5"></i>
+                        <i class="hr-line hr1"></i>
+                        <i class="hr-line hr2"></i>
+                        <i class="hr-line hr3"></i>
+                    </div>
+                    <div class="group-control">
+                        <div class="control-area"></div>
+                        <button class="btn-prev" aria-label="이전슬라이드"></button>
+                        <div class="fraction">
+                            <span class="more"><span class="media">언론사</span> 더보기</span>
+                            <span class="current">4<span class="blind">페이지</span></span>
+                            <span class="total"><span class="blind">전체</span>/21</span>
+                        </div>
+                        <button class="btn-next" aria-label="다음슬라이드"></button>
+                        <div class="set-area">
+                            <button class="btn-list" aria-label="리스트형"></button>
+                            <button class="btn-thumb" aria-label="썸네일형"></button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="main-col-right">
+                <section class="common-frame sc-login">
+                    <h2 class="blind">로그인</h2>
+                    <p class="login-msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+
+                    <a href="" class="link-login"><span class="blind">NAVER</span>로그인</a>
+                    <div class="login-more">
+                        <a href="">아이디 찾기</a>
+                        <a href="">비밀번호 찾기</a>
+                        <a href="">회원가입</a>
+                    </div>
+                </section>
+                <aside class="common-frame aside-ad">
+                    <a href="">
+                        <img src="./assets/images/ad2.jpg" alt="">
+                    </a>
+                </aside>
+                <section class="common-frame sc-weather">
+                    <div class="sc-header">
+                        <div class="header_wrap">
+                            <h2><a href="">날씨</a></h2>
+                            <span class="wth_data"><a href="">예보 비교</a></span>
+                        </div>
+                        <span class="location">서울시 을지로1가</span>
+                    </div>
+                    <div class="sc-data">
+                        <div class="info-box"></div>
+                        <ul class="info-list">
+                            <li class="info-item">-8° 16시</li>
+                            <li class="info-item">-8° 16시</li>
+                            <li class="info-item">-8° 16시</li>
+                            <li class="info-item">-8° 16시</li>
+                            <li class="info-item">-8° 16시</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="common-frame sc-finance">
+                    <div class="sc-header">
+                        <h2><a href="">증시</a></h2>
+                        <span>01.21. 14:46</span>
+                    </div>
+
+                </section>
+                <section class="common-frame sc-widgetboard">
+                    <h2>위젯 보드</h2>
+                    <div class="wigetbox">
+                        <div class="cal"></div>
+                        <div class="memo"></div>
+                        <div class="papago"></div>
+                        <div class="dic"></div>
+                        <div class="vibe"></div>
+                    </div>
+                    <p>모바일 네이버 메인 열기</p>
+                </section>
+                <section class="common-frame sc-widgetboard">
+                    <h2>위젯 보드</h2>
+                    <div class="wigetbox">
+                        <div class="cal"></div>
+                        <div class="memo"></div>
+                        <div class="papago"></div>
+                        <div class="dic"></div>
+                        <div class="vibe"></div>
+                    </div>
+                    <p>모바일 네이버 메인 열기</p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-group">
+                <div class="public-area">
+                    <div class="public-box">
+                        광고 이미지
+                        네이버 커넥트재단
+                        한글 몰라도 할 수 있는
+                        유아 사고력 수학!
+                        무료학습앱 쥬니버스쿨 해보세요
+                    </div>
+                </div>
+                <div class="notice-area">
+                    <h3>공지사항</h3>
+                    <p class="link-all">서비스 전체보기</p>
+                </div>
+                <div class="aside-area">
+                    <div class="aside-wrap">
+                        <div class="partner-box">
+                            <h3>Partners</h3>
+                            <ul class="partner-list">
+                                <li class="partner-item">프로젝트 꽃</li>
+                                <li class="partner-item">네이버 비즈니스</li>
+                                <li class="partner-item">네이버 비즈니스 스쿨</li>
+                                <li class="partner-item">네이버 광고</li>
+                                <li class="partner-item">스토어 개설</li>
+                                <li class="partner-item">지역업체 등록</li>
+                                <li class="partner-item">엑스퍼트 등록</li>
+                            </ul>
+                        </div>
+                        <div class="developers-box">
+                            <h3>Developers</h3>
+                            <ul class="dev-list">
+                                <li class="dev-item">네이버 개발자 센터</li>
+                                <li class="dev-item"> 오픈 API</li>
+                                <li class="dev-item"> 오픈소스</li>
+                                <li class="dev-item"> 네이버 D2</li>
+                                <li class="dev-item"> 네이버 D2SF</li>
+                                <li class="dev-item"> 네이버 랩스</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-wrap">
+                        <div class="browser">
+                            <span>웨일 브라우저</span>
+                            <a href="">이용안내</a>
+                        </div>
+                        <div class="co-site">
+                            <span>기업 사이트</span>
+                            <a href="">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="com-area">
+                    <h3 class="blind">네이버 정책 및 약관</h3>
+                    <ul class="com-list">
+                        <li class="com-item"><a href="">회사소개</a></li>
+                        <li class="com-item"><a href="">인재채용</a></li>
+                        <li class="com-item"><a href="">제휴제안</a></li>
+                        <li class="com-item"><a href="">이용약관</a></li>
+                        <li class="com-item"><a href="">개인정보처리방침</a></li>
+                        <li class="com-item"><a href="">청소년보호정책</a></li>
+                        <li class="com-item"><a href="">네이버 정책</a></li>
+                        <li class="com-item"><a href="">고객센터</a></li>
+                        <li class="com-item">ⓒ NAVER Corp.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
