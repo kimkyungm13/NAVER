@@ -373,6 +373,10 @@
     line-height: 17px;
 }
 
+.footer .footer-group .notice-area h3 {
+    font-weight: bold;
+}
+
 .footer .footer-group .notice-area .link-all {
     display: flex;
     align-items: center;
@@ -412,7 +416,7 @@
 .footer .footer-group .aside-area .aside-wrap {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     padding: 20px 0;
 }
 
@@ -425,6 +429,7 @@
 
 .footer .footer-group .aside-area .aside-wrap [class*="-box"] h3 {
     width: 87px;
+    font-weight: bold;
 
 }
 
@@ -457,6 +462,20 @@
 .footer .footer-group .aside-area .dev-item {}
 
 .footer .footer-group .aside-area .link-wrap {}
+
+.footer .footer-group .aside-area .link-wrap .browser,
+.footer .footer-group .aside-area .link-wrap .co-site {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer-group .aside-area .link-wrap .browser-info,
+.footer .footer-group .aside-area .link-wrap .site-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .footer .footer-group .com-area {
     padding-top: 20px;

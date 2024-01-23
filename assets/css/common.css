@@ -8,6 +8,10 @@
     margin: -1px
 }
 
+strong {
+    font-weight: bold;
+}
+
 /* 아이콘이나 스프라이트 배경이 필요할경우 선택자 클래스명을 넣기 */
 .header .group-search form fieldset .btn-keyboard::before,
 .header .group-search form fieldset .btn-auto::before,
@@ -20,8 +24,8 @@
 .main-col-right .sc-weather .header_wrap .wth_data::before,
 .sc-news .group-control .set-area .btn-list::after,
 .sc-news .group-control .set-area .btn-thumb::after,
-.sc-news .group-control .btn-prev:before,
-.sc-news .group-control .btn-next:before {
+.control-fx .group-control .btn-prev:before,
+.control-fx .group-control .btn-next:before {
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 434px;
