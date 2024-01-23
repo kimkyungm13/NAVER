@@ -162,6 +162,7 @@
 .sc-news .group-issue .issue-area {
     display: flex;
     flex: 1;
+    min-width: 0;
 }
 
 .sc-news .group-issue .issue-area .btn-all::after {
@@ -529,10 +530,17 @@
     padding: 0 20px;
 }
 
+.sc-recipe .feed_box+.feed_box {
+    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--color_border_in);
+    padding-top: 20px;
+}
+
 .sc-recipe .feed_box .feed-list {
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    padding-bottom: 24px;
 }
 
 .sc-recipe .feed_box .feed-item {
@@ -583,6 +591,7 @@
     border-radius: 4px;
     width: 100%;
     height: 144px;
+    margin-bottom: 10px;
 }
 
 .sc-recipe .feed_box .feed-item a.item-link .item-img:after {
@@ -601,6 +610,47 @@
     perspective: 1px;
 }
 
+.sc-recipe .feed_box .recipe-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sc-recipe .feed_box .recipe-list li {
+    min-width: 0;
+}
+
+.sc-recipe .feed_box a.rec-link {}
+
+.sc-recipe .feed_box a.rec-link .rec-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sc-recipe .feed_box a.rec-link .rec-wrap .rec-img {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    width: 154px;
+}
+
+.sc-recipe .feed_box a.rec-link .rec-wrap .rec-txt {
+    flex: 1;
+}
+
+.sc-recipe .feed_box a.rec-link .rec-wrap .rec-txt p {
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 42px;
+    line-height: 21px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+}
 
 
 
