@@ -29,11 +29,8 @@ strong {
 .sc-finance .group-header .info-more:before,
 .sc-finance .group-header .refresh:before,
 .main-col-right .sc-widgetboard .group-header .ico-vibe,
-<<<<<<< HEAD
-=======
 .main-col-right .sc-widgetboard .wigetbox .papago .papago-link:after,
 .main-col-right .sc-widgetboard .wigetbox .dict .link_search::after,
->>>>>>> f504803bd66e0a2d9f58c4a755bc4aea925c62b2
 .mobile_link .mlink_txt::before,
 .mobile_link .mlink_txt::after {
     background-image: url(../images/sp-bg.png);
