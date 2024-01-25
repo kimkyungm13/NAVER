@@ -28,7 +28,9 @@ strong {
 .control-fx .group-control .btn-next:before,
 .sc-finance .group-header .info-more:before,
 .sc-finance .group-header .refresh:before,
-.main-col-right .sc-widgetboard .group-header .ico-vibe {
+.main-col-right .sc-widgetboard .group-header .ico-vibe,
+.main-col-right .sc-widgetboard .wigetbox .papago .papago-link:after,
+.main-col-right .sc-widgetboard .wigetbox .dict .link_search::after {
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 434px;
@@ -40,7 +42,8 @@ strong {
     background-repeat: no-repeat;
 }
 
-.sc-weather .group-data .info-item .ico:before {
+.sc-weather .group-data .info-item .ico:before,
+.sc-weather .group-data .data-wrap .data-box .wth_ico:after {
     background-image: url(../images/sp-wth.png);
     background-size: 641px;
     background-repeat: no-repeat;
