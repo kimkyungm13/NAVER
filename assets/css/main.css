@@ -830,6 +830,10 @@
     perspective: 1px;
 }
 
+.sc-recipe .feed_box .feed-item a.item-link .img-border {
+    margin-bottom: 10px;
+}
+
 .sc-recipe .feed_box a.rec-link .rec-wrap .rec-txt {
     flex: 1;
 }
@@ -1173,6 +1177,129 @@
     flex: 1;
 }
 
+.sc-weather .group-data .data-wrap .data-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .info-temp {
+    display: flex;
+    align-items: center;
+}
+
+.sc-weather .group-data .data-wrap .data-box .info-temp .temp_row {
+    color: #3172e7;
+}
+
+.sc-weather .group-data .data-wrap .data-box .info-temp .temp_high {
+    color: #cd3534;
+}
+
+.sc-weather .group-data .data-wrap .data-box .info-temp .temp_high:before {
+    content: "";
+    display: block;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 0 5px 0 3px;
+    -webkit-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    vertical-align: -1px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth_ico {
+    width: 86px;
+    height: 86px;
+    margin-right: 4px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth_ico:after {
+    content: "";
+    display: block;
+    background-position: -87px 0px;
+    width: 86px;
+    height: 86px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth_txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth_status {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+}
+
+.sc-weather .group-data .data-wrap .data-box .wth_temp {
+    min-width: 0;
+    font-size: 3.9rem;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+.sc-weather .group-data .data-wrap .dust-box {
+    display: block;
+    margin-top: 6px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sc-weather .group-data .data-wrap .dust-box .dust-text+.dust-text:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 8px 6px 0;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.sc-weather .group-data .data-wrap .dust-box .dust-txt {
+    display: inline-block;
+    font-size: 1.3rem;
+    vertical-align: top;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sc-weather .group-data .data-wrap .dust-box .dust-status {
+    padding-left: 4px;
+}
+
+.sc-weather .group-data .data-wrap .dust-box .dust-status.s01 {
+    color: #32a1ff;
+}
+
+.sc-weather .group-data .data-wrap .dust-box .dust-status.s02 {
+    color: #02c73c;
+}
+
+.sc-weather .group-data .data-wrap .dust-box {}
+
 .sc-weather .group-data .info-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1467,6 +1594,7 @@
     gap: 12px;
 }
 
+
 .main-col-right .sc-widgetboard .wigetbox>div.vibe .scroll-col .vibe_item {
     width: 108px;
     display: flex;
@@ -1584,6 +1712,307 @@
     height: 12px;
 }
 
+<<<<<<< HEAD
+=======
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 9px 7px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .cal_info {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .link_info_tit {
+    color: #080808;
+    color: var(--color_title);
+    display: block;
+    padding-left: 11px;
+    font-size: 1.5rem;
+    line-height: 34px;
+    font-weight: 800;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .info_box {
+    height: 132px;
+    padding-left: 11px;
+    text-decoration: none;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .link_info {
+    display: block;
+    margin: 8px 0 0 -1px;
+    font-size: 3.9rem;
+    line-height: 36px;
+    letter-spacing: -2px;
+    text-decoration: none;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .link_info_day {
+    display: inline-block;
+    margin: 16px 0 0 9px;
+    font-size: 1.3rem;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .cal .cal-link .link_login {
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+    color: #606060;
+    color: var(--color_caption2);
+    text-decoration: underline;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_top {
+    display: flex;
+    position: relative;
+    padding: 7px 9px;
+    border-radius: 8px 8px 0 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#00b869), to(#00c772));
+    background-image: -o-linear-gradient(bottom, #00b869, #00c772);
+    background-image: linear-gradient(to top, #00b869, #00c772);
+    line-height: 34px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_top .memo_tit {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(255, 255, 255, 0.4)), color-stop(30%, transparent));
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.4) 70%, transparent 30%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 70%, transparent 30%);
+    background-size: 6px 1px;
+}
+
+
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_list {}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_item {
+    height: 46px;
+    padding: 0 18px;
+    line-height: 46px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_item .login-txt {
+    color: #606060;
+    color: var(--color_caption2);
+    display: block;
+    line-height: 43px;
+    text-decoration: underline;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_item+.info_item {
+    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--color_border_in_exception);
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago-link {
+    position: relative;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: 0px 0px;
+    width: 78px;
+    height: 68px;
+    transform: translate(-50%, -50%);
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago-link .papago_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding: 18px 18px 12px 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago_ico {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
+    background-size: 434px 416px;
+    background-position: -164px -183px;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 17px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict-link {
+    position: relative;
+    height: 100%;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+    width: 14px;
+    border-radius: 0 8px 8px 0;
+    -webkit-box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0, 0, 0, .04);
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .link_search {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dadcdf;
+    border: 1px solid var(--color_button_border);
+    background-color: #fff;
+    background-color: var(--color_button2_bg);
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
+    text-decoration: none;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .link_search::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: -364px -300px;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict_wrap {
+    background-color: #fff;
+    background-color: var(--color_menu_widget_bg);
+    position: relative;
+    height: 100%;
+    margin-right: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0, 0, 0, .04);
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict_wrap .dict_tit {
+    color: #080808;
+    color: var(--color_title);
+    display: block;
+    padding: 16px 18px 19px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    font-weight: 800;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict_info {
+    position: relative;
+    display: block;
+    height: 106px;
+    text-decoration: none;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .dict_info::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e8effb;
+    background: -o-radial-gradient(bottom, circle, #e8effb 1px, transparent 0) top/1px 21px;
+    background: radial-gradient(circle at bottom, #e8effb 1px, transparent 0) top/1px 21px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .today_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 18px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .dict .today_dict {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 105px;
+    line-height: 21px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: bold;
+    word-wrap: break-word;
+    letter-spacing: -0.2px;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago_text {
+    position: relative;
+    margin: 0 13px;
+    border-radius: 20px;
+    background-color: #00a2ff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .04);
+    font-size: 1.3rem;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.main-col-right .sc-widgetboard .wigetbox .papago .papago-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, .02);
+    border-radius: 20px;
+}
+
+>>>>>>> f504803bd66e0a2d9f58c4a755bc4aea925c62b2
 .sc-content-area {
     display: flex;
     position: relative;
