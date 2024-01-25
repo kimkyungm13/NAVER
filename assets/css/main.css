@@ -13,12 +13,27 @@
     overflow: hidden;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover .img-border img {
+    transition-duration: .3s;
+    transform: scale(1.05);
+}
+
 /*img border*/
 .img-border {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
     display: block;
+}
+
+
+.img-border img {
+    transition: transform .2s cubic-bezier(.165, .84, .44, 1);
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .img-border:after {
@@ -814,22 +829,6 @@
     width: 154px;
 }
 
-.sc-recipe .feed_box a.rec-link .rec-wrap .rec-img:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid rgba(0, 0, 0, .06);
-    border-radius: inherit;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1px;
-    perspective: 1px;
-}
-
 .sc-recipe .feed_box .feed-item a.item-link .img-border {
     margin-bottom: 10px;
 }
@@ -1484,9 +1483,61 @@
 
 .sc-finance .group-data .info-box {
     flex: 1;
+    min-width: 0;
 }
 
-.sc-finance .group-data .info-box .stock_list {}
+.sc-finance .group-data .info-box .stock_list_link {
+    text-decoration: none;
+}
+
+.sc-finance .group-data .info-box .stock_list_link [class*="stock"] {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.7px;
+    margin-top: 3px;
+    max-width: 100%;
+}
+
+.sc-finance .group-data .info-box .stock_list_link .stock_price {
+    margin-top: 3px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.7px;
+}
+
+.sc-finance .group-data .info-box .stock_list_link .stock_name {}
+
+.sc-finance .group-data .info-box .stock_list_link .rate {
+    padding-left: 6px;
+}
+
+.sc-finance .group-data .info-box .stock_list_link .stock_gap {
+    position: relative;
+    color: #2196f3;
+    margin-top: 2px;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.sc-finance .group-data .info-box .stock_list_link .stock_gap.type_down .ico_status {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
+    background-size: 434px 416px;
+    background-position: -425px -185px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sc-finance .group-data .info-box .stock_list_link .stock_gap.type_down .ico_status {}
 
 .sc-finance .group-data .info-box .stock_item {
     border-bottom: 1px solid #ebebeb;
@@ -1503,6 +1554,21 @@
     justify-content: space-between;
     padding: 8px 0 9px;
     line-height: 21px;
+    position: relative;
+}
+
+.sc-finance .group-data .info-box .stock_item .stock_link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
+    background-size: 434px 416px;
+    background-position: -218px -404px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
 }
 
 .sc-finance .group-data .info-box .stock_name {
@@ -1514,13 +1580,11 @@
 }
 
 .sc-finance .group-data .info-box .ico_stock {
-    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
-    background-size: 434px 416px;
     background-position: -425px -192px;
-    background-repeat: no-repeat;
     width: 9px;
     height: 6px;
     margin: 8px 4px 0 0;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -1667,10 +1731,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
-    background-size: 434px 416px;
     background-position: -425px -131px;
-    background-repeat: no-repeat;
     width: 7px;
     height: 10px;
     margin: auto;
@@ -1862,10 +1923,7 @@
 }
 
 .main-col-right .sc-widgetboard .wigetbox .papago .papago_ico {
-    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
-    background-size: 434px 416px;
     background-position: -164px -183px;
-    background-repeat: no-repeat;
     width: 76px;
     height: 17px;
 }
@@ -2080,4 +2138,51 @@
 
 .sc-content-area .banner_indicator .dot.on {
     background-color: #03c75a;
+}
+
+.layer_btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 50;
+}
+
+.layer_btn a+a {
+    margin-left: 12px;
+}
+
+
+
+.layer_btn a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-color: var(--color_button1_bg);
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0, 0, 0, .15);
+    vertical-align: top;
+}
+
+.layer_btn a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+}
+
+.layer_btn .top:before {
+    background-position: -121px -385px;
+}
+
+.layer_btn .system:before {
+    background-position: -36px -385px;
 }
