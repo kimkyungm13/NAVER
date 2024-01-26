@@ -34,6 +34,7 @@ strong {
 .mobile_link .mlink_txt::before,
 .mobile_link .mlink_txt::after,
 .sc-finance .group-data .info-box .ico_stock,
+.sc-finance .group-data .info-box .stock_item .stock_link::after,
 .sc-widgetboard .wigetbox>div.vibe .scroll-col .vibe_item .ico_play:before,
 .main-col-right .sc-widgetboard .wigetbox .papago .papago_ico,
 .layer_btn .top:before,

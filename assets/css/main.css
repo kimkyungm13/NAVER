@@ -454,7 +454,6 @@ a:hover .img-border img {
     height: 13px;
 }
 
-.sc-commerce .group-benefit .benefit-area {}
 
 .pagecontrol-area {
     display: flex;
@@ -481,7 +480,6 @@ a:hover .img-border img {
     color: rgba(113, 113, 113, .6);
 }
 
-.pagecontrol-area .fraction {}
 
 .pagecontrol-area button {
     width: 30px;
@@ -739,7 +737,6 @@ a:hover .img-border img {
     text-align: center;
 }
 
-.sc-recipe {}
 
 .sc-recipe .feed_box {
     position: relative;
@@ -813,7 +810,6 @@ a:hover .img-border img {
     min-width: 0;
 }
 
-.sc-recipe .feed_box a.rec-link {}
 
 .sc-recipe .feed_box a.rec-link .rec-wrap {
     display: flex;
@@ -1121,23 +1117,19 @@ a:hover .img-border img {
 .sc-weather .group-header .header_wrap {
     display: flex;
     flex: 1;
+    align-items: center;
 }
 
 .sc-weather .header_wrap .wth_data {
     border: 1px solid var(--color_border_in_divider);
     background-color: var(--color_button1_bg);
     color: var(--color_caption2);
-    display: inline-block;
     min-width: 75px;
     height: 26px;
-    margin-top: 7px;
     padding: 0 10px 0 7px;
     border-radius: 15px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     font-size: 1.1rem;
     line-height: 25px;
-    vertical-align: top;
     text-decoration: none;
 }
 
@@ -1151,15 +1143,8 @@ a:hover .img-border img {
     vertical-align: top;
 }
 
-
-
-.sc-weather .header_wrap .wth_data .info-list {}
-
-.sc-weather .header_wrap .wth_data .info-list {}
-
 .sc-weather .location {
     color: var(--color_caption2);
-    margin-left: auto;
     font-size: 1.3rem;
 }
 
@@ -1182,6 +1167,7 @@ a:hover .img-border img {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    text-decoration: none;
 }
 
 .sc-weather .group-data .data-wrap .data-box .info-temp {
@@ -1195,13 +1181,12 @@ a:hover .img-border img {
 
 .sc-weather .group-data .data-wrap .data-box .info-temp .temp_high {
     color: #cd3534;
+    display: flex;
+    align-items: center;
 }
 
 .sc-weather .group-data .data-wrap .data-box .info-temp .temp_high:before {
     content: "";
-    display: block;
-    content: "";
-    display: inline-block;
     width: 1px;
     height: 11px;
     background-color: #d3d5d7;
@@ -1210,7 +1195,6 @@ a:hover .img-border img {
     -webkit-transform: skewX(-15deg);
     -ms-transform: skewX(-15deg);
     transform: skewX(-15deg);
-    vertical-align: -1px;
 }
 
 .sc-weather .group-data .data-wrap .data-box .wth-info {
@@ -1263,6 +1247,7 @@ a:hover .img-border img {
     margin-top: 6px;
     line-height: 20px;
     text-align: center;
+    text-decoration: none;
 }
 
 .sc-weather .group-data .data-wrap .dust-box .dust-text+.dust-text:before {
@@ -1297,7 +1282,6 @@ a:hover .img-border img {
     color: #02c73c;
 }
 
-.sc-weather .group-data .data-wrap .dust-box {}
 
 .sc-weather .group-data .info-list {
     display: -webkit-box;
@@ -1509,7 +1493,6 @@ a:hover .img-border img {
     letter-spacing: -0.7px;
 }
 
-.sc-finance .group-data .info-box .stock_list_link .stock_name {}
 
 .sc-finance .group-data .info-box .stock_list_link .rate {
     padding-left: 6px;
@@ -1563,10 +1546,7 @@ a:hover .img-border img {
     position: absolute;
     top: 13px;
     right: 0;
-    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
-    background-size: 434px 416px;
     background-position: -218px -404px;
-    background-repeat: no-repeat;
     width: 10px;
     height: 12px;
 }
@@ -1588,9 +1568,7 @@ a:hover .img-border img {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.sc-finance .group-data .info-box .ico_stock.status_up {}
 
-.sc-finance .group-data .info-box .ico_stock.status_down {}
 
 .main-col-right .sc-widgetboard {
     background-color: #f4f6fa;
@@ -1625,7 +1603,6 @@ a:hover .img-border img {
     margin: 2px 8px 0 0;
 }
 
-.main-col-right .sc-widgetboard .group-header .ico-vibe:before {}
 
 .main-col-right .sc-widgetboard .wigetbox {
     display: grid;
@@ -1774,16 +1751,13 @@ a:hover .img-border img {
 }
 
 .main-col-right .sc-widgetboard .wigetbox .cal .cal-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 9px 7px;
+    text-decoration: none;
 }
 
 .main-col-right .sc-widgetboard .wigetbox .cal .cal-link .cal_info {
     position: relative;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     min-width: 0;
 }
@@ -1868,7 +1842,6 @@ a:hover .img-border img {
 
 
 
-.main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_list {}
 
 .main-col-right .sc-widgetboard .wigetbox .memo .memo-link .memo_info .info_item {
     height: 46px;
