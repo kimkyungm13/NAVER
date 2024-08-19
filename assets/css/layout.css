@@ -24,7 +24,6 @@
     transform: translateX(-50%);
 }
 
-.header .group-search .logo {}
 
 .header .group-search .logo a {
     display: block;
@@ -304,7 +303,6 @@
     image-rendering: -webkit-optimize-contrast;
 }
 
-.footer .footer-group .public-area .public-wrap {}
 
 .footer .footer-group .public-area .public-wrap .aside-subtit {
     overflow: hidden;
@@ -452,16 +450,6 @@
     background-color: #d3d5d7;
     background-color: var(--color_dot_divider);
 }
-
-.footer .footer-group .aside-area .partner-list {}
-
-.footer .footer-group .aside-area .partner-item {}
-
-.footer .footer-group .aside-area .dev-list {}
-
-.footer .footer-group .aside-area .dev-item {}
-
-.footer .footer-group .aside-area .link-wrap {}
 
 .footer .footer-group .aside-area .link-wrap .browser,
 .footer .footer-group .aside-area .link-wrap .co-site {
